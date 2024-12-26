@@ -6,41 +6,40 @@ body {
   
   .header {
     display: flex;
-    align-items: center; /* Aligne les éléments verticalement */
-    justify-content: space-between; /* Espacement égal entre le logo et la nav */
-    padding: 0 20px; /* Ajoute un peu d'espace autour du header */
-    height: 100px; /* Hauteur du header */
-    border-bottom: 1px solid #ddd; /* Ligne de séparation sous le header */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 20px; 
+    height: 80px; 
+    border-bottom: 1px solid #ddd; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   }
   
 
   .logo {
-    width: 180px;
-    height: 180px; 
+    width: 150px;
+    height: 150px; 
   }
   
   /* Navigation */
   .nav {
     display: flex;
-    gap: 30px; /* Espace entre les liens */
-    align-items: center; /* Centre les liens verticalement */
+    gap: 30px; 
+    align-items: center; 
   }
-  
-  /* Style des liens de la navigation */
+
   .nav a {
     text-decoration: none;
-    color: #333; /* Couleur par défaut des liens */
-    font-size: 19px;
+    color: #333; 
+    font-size: 18px;
     font-weight: 500;
   }
   
   .nav a:hover {
-    color: #d6b4fc; /* Couleur des liens au survol */
+    color: #d6b4fc; 
   }
   
   .active-link {
-    font-weight: bold; /* Met le lien actif en gras */
-    color: #000; /* Change la couleur du lien actif */
-    text-decoration: underline; /* Sousligne le lien actif */
+    font-weight: bold;
+    color: #000;
+    text-decoration: underline;
   }
