@@ -1,15 +1,17 @@
 import React from "react";
 import Header from "../components/Header/header"
 import Carousel from "../components/Carousel/carousel";
-import Service from "../components/Services/services";
+import FitnessServices from "../components/Services/CoursCo&SGT";
 import Footer from "../components/Footer/footer";
+import Services from "../components/Services/CoachingPerso";
 
 const Home = () => {
     return (
         <div>
             <Header />
             <Carousel />
-            <Service />
+            <Services />
+            <FitnessServices />
             <Footer />
         </div>
     );
