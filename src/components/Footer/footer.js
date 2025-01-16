@@ -7,15 +7,25 @@ import "./footer.css";
 const Footer = () => {
   return (
     <footer>
-      <a href="https://www.instagram.com/noemiehsn/" target="_blank" rel="noopener noreferrer">
-        <FontAwesomeIcon icon={faInstagram} size="2x" />
-      </a>
-      <a href="https://www.facebook.com/noemie.husson.9" target="_blank" rel="noopener noreferrer">
-        <FontAwesomeIcon icon={faFacebook} size="2x" />
-      </a>
-      <a href="noemiehusson1@gmail.com">
-        <FontAwesomeIcon icon={faEnvelope} size="2x" />
-      </a>
+      <div className="footer-icons">
+        <a href="https://www.instagram.com/noemiehsn/" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faInstagram} size="2x" />
+        </a>
+        <a href="https://www.facebook.com/noemie.husson.9" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faFacebook} size="2x" />
+        </a>
+        <a href="mailto:noemiehusson1@gmail.com">
+          <FontAwesomeIcon icon={faEnvelope} size="2x" />
+        </a>
+      </div>
+      <p className="footer-credit">
+        © 2025 - Créé avec 💜 par
+      <a 
+        href="https://github.com/votre-pseudo-github" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        >Tatiana</a>
+      </p>
     </footer>
   );
 };
