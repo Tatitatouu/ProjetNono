@@ -55,9 +55,9 @@ const ImageCarousel = ({ images, interval = 3000 }) => {
 
 const Carousel = () => {
   const images = [
-    '/assets/slider/cross.webp',
-    '/assets/slider/deadlift.webp',
-    '/assets/slider/kettel.webp'
+  `${process.env.PUBLIC_URL}/assets/slider/cross.webp`,
+  `${process.env.PUBLIC_URL}/assets/slider/deadlift.webp`,
+  `${process.env.PUBLIC_URL}/assets/slider/kettel.webp`
   ];
   
   return <ImageCarousel images={images} interval={5000} />;
