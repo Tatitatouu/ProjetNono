@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import cross from '../../assets/slider/cross.webp'
+import kettel from '../../assets/slider/kettel.webp'
+import deadlift from '../../assets/slider/deadlift.webp'
 import './carousel.css';
 
 const ImageCarousel = ({ images, interval = 3000 }) => {
@@ -54,11 +57,7 @@ const ImageCarousel = ({ images, interval = 3000 }) => {
 };
 
 const Carousel = () => {
-  const images = [
-  "/public/assets/slider/cross.webp",
-  "/public/assets/slider/deadlift.webp",
-  "/public/assets/slider/kettel.webp",
-  ];
+  const images = [deadlift, cross, kettel];
   
   return <ImageCarousel images={images} interval={5000} />;
 };
