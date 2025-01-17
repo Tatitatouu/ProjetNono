@@ -1,5 +1,6 @@
 import React from 'react';
 import { Users, Target, MapPin, Clipboard } from 'lucide-react';
+import CoachImage from '../../assets/about/VJP_3308.jpg'
 import './about.css'
 
 const AboutSection = () => {
@@ -18,7 +19,7 @@ const AboutSection = () => {
           </div>
           <div>
             <img 
-              src="../../assets/about/VJP_3308.jpg" 
+              src={CoachImage}
               alt="Coach sportive en action" 
               className="hero-image"
             />
