@@ -7,13 +7,13 @@ import Contact from "./pages/contact";
 
 const App = () => {
     return (
-        <Router>
+        <Router basename="/ProjetNono">
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="*" element={<Erreur404 />} />
-                <Route path="/transfo-avis" element={<Erreur404 />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/*" element={<Erreur404 />} />
+                <Route path="/transfo-avis" element={<Erreur404 />} />
             </Routes>
         </Router>
     );
