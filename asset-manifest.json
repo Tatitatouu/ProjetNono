@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ProjetNono/static/css/main.9595e0aa.css",
-    "main.js": "/ProjetNono/static/js/main.4beeb244.js",
+    "main.js": "/ProjetNono/static/js/main.bcd0197a.js",
     "static/js/453.02f9f2ee.chunk.js": "/ProjetNono/static/js/453.02f9f2ee.chunk.js",
     "static/media/VJP_3308.jpg": "/ProjetNono/static/media/VJP_3308.b99755261fdfccdf276e.jpg",
     "static/media/deadlift.webp": "/ProjetNono/static/media/deadlift.6ced21e8331e878fa52d.webp",
@@ -10,11 +10,11 @@
     "static/media/logo full black.png": "/ProjetNono/static/media/logo full black.7cb96a735c29c39db456.png",
     "index.html": "/ProjetNono/index.html",
     "main.9595e0aa.css.map": "/ProjetNono/static/css/main.9595e0aa.css.map",
-    "main.4beeb244.js.map": "/ProjetNono/static/js/main.4beeb244.js.map",
+    "main.bcd0197a.js.map": "/ProjetNono/static/js/main.bcd0197a.js.map",
     "453.02f9f2ee.chunk.js.map": "/ProjetNono/static/js/453.02f9f2ee.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9595e0aa.css",
-    "static/js/main.4beeb244.js"
+    "static/js/main.bcd0197a.js"
   ]
 }
