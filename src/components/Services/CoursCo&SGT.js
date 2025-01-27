@@ -1,26 +1,26 @@
 import React from 'react';
-import { FaUsers, FaHeartbeat, FaBullseye } from 'react-icons/fa';
+import { FaFeather, FaHeartbeat, FaBullseye } from 'react-icons/fa';
 import "./CoursCo&SGT.css"
 
 const FitnessServices = () => {
   const services = [
     {
-      title: "Cours Collectifs",
-      description: "Des séances dynamiques en groupe pour atteindre vos objectifs",
-      icon: <FaUsers/>,
-      items: ["RPM", "Body Pump", "Balance"]
+      title: "Mouvements en douceur",
+      description: "Un moment calme pour détendre et assouplir ton corps",
+      icon: <FaFeather/>,
+      items: ["Stretching", "Mobilité"]
     },
     {
       title: "Cardio & Renforcement",
       description: "Améliorez votre condition physique avec des exercices variés et adaptés",
       icon: <FaHeartbeat />,
-      items: ["Cardio", "Renforcement musculaire", "Mobilité"]
+      items: ["Renforcement musculaire", "Cardio"]
     },
     {
       title: "Entraînement Spécialisé",
       description: "Des séances ciblées et structurées pour atteindre des résultats optimaux efficacement",
       icon: <FaBullseye />,
-      items: ["Cross Training", "Circuit Training", "Stretching"]
+      items: ["Cross Training", "Circuit Training"]
     }
   ];
 

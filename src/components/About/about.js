@@ -12,7 +12,7 @@ const AboutSection = () => {
           <div className="hero-content">
             <h1 className="hero-title">Votre coach sportive personnelle</h1>
             <p className="hero-text">
-              Diplômée d'un CQP Instructeur Fitness Double Mention (Personal Training Musculation & Cours Collectifs). 
+              Diplômée d'un CQP Instructeur Fitness Double Mention (Personal Training Musculation & Cours Collectifs) et d'une formation Hyrox : "HYROX365 foundation course". 
               Passionnée par le sport depuis toujours,
               je vous accompagne dans votre parcours vers une meilleure version de vous-même.
             </p>
@@ -70,7 +70,7 @@ const AboutSection = () => {
             </div>
             <div className="card">
               <h3>Athlètes</h3>
-              <p>Préparez-vous pour des compétitions comme l'Hyrox ou la course à pied.</p>
+              <p>Préparez-vous pour des compétitions comme l'Hyrox.</p>
             </div>
           </div>
         </div>
@@ -86,7 +86,7 @@ const AboutSection = () => {
           <div className="feature-card">
             <h3 className="feature-title">En présentiel</h3>
             <ul className="location-list">
-              <li>• Fitness Park Illzach - Cours collectifs Les Mills</li>
+              <li>• Fitness Park Illzach</li>
               <li>• Mulhouse et alentours - Séances personnalisées</li>
               <li>• Kruth - Week-ends sportifs aux Chambres d'Hôtes des Cascades</li>
             </ul>
