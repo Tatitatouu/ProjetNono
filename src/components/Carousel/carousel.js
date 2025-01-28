@@ -9,6 +9,12 @@ const ImageCarousel = ({ images, interval = 3000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
+  const imageDescriptions = [
+    "Exercice de deadlift",
+    "Exercice de crossfit",
+    "Exercice avec kettlebell"
+  ];
+
   useEffect(() => {
     if (isHovered) return;
     const timer = setInterval(() => {
@@ -26,29 +32,41 @@ const ImageCarousel = ({ images, interval = 3000 }) => {
       className="carousel-container"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      role="region"
+      aria-label="Carrousel d'images d'exercices"
     >
       <div className="carousel-wrapper">
         <img 
           src={images[currentIndex]} 
-          alt={`Slide ${currentIndex + 1}`}
+          alt={imageDescriptions[currentIndex]}
           className="carousel-image"
         />
         
-        <button onClick={prevSlide} className="carousel-button prev">
-          <ChevronLeft className="carousel-icon" aria-label='Image précédente' />
+        <button 
+          onClick={prevSlide} 
+          className="carousel-button prev"
+          aria-label="Image précédente"
+        >
+          <ChevronLeft className="carousel-icon" />
         </button>
         
-        <button onClick={nextSlide} className="carousel-button next">
-          <ChevronRight className="carousel-icon" aria-label='Image suivante' />
+        <button 
+          onClick={nextSlide} 
+          className="carousel-button next"
+          aria-label="Image suivante"
+        >
+          <ChevronRight className="carousel-icon" />
         </button>
       </div>
       
-      <div className="carousel-dots" aria-label="Aller à l'image suivante">
+      <div className="carousel-dots">
         {images.map((_, index) => (
           <button 
             key={index} 
             onClick={() => goToSlide(index)}
             className={`carousel-dot ${index === currentIndex ? 'active' : ''}`}
+            aria-label={`Aller à l'image ${index + 1}: ${imageDescriptions[index]}`}
+            aria-current={index === currentIndex ? "true" : "false"}
           />
         ))}
       </div>

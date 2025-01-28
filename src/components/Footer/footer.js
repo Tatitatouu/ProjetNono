@@ -8,13 +8,20 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer-icons">
-        <a href="https://www.instagram.com/noemiehsn/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/noemiehsn/" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           aria-label="Suivez-moi sur Instagram">
           <FontAwesomeIcon icon={faInstagram} size="2x" />
         </a>
-        <a href="https://www.facebook.com/noemie.husson.9" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.facebook.com/noemie.husson.9" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           aria-label="Suivez-moi sur Facebook">
           <FontAwesomeIcon icon={faFacebook} size="2x" />
         </a>
-        <a href="mailto:noemiehusson1@gmail.com">
+        <a href="mailto:noemiehusson1@gmail.com"
+           aria-label="Contactez-moi par email">
           <FontAwesomeIcon icon={faEnvelope} size="2x" />
         </a>
       </div>
