@@ -35,15 +35,15 @@ const ImageCarousel = ({ images, interval = 3000 }) => {
         />
         
         <button onClick={prevSlide} className="carousel-button prev">
-          <ChevronLeft className="carousel-icon" />
+          <ChevronLeft className="carousel-icon" aria-label='Image précédente' />
         </button>
         
         <button onClick={nextSlide} className="carousel-button next">
-          <ChevronRight className="carousel-icon" />
+          <ChevronRight className="carousel-icon" aria-label='Image suivante' />
         </button>
       </div>
       
-      <div className="carousel-dots">
+      <div className="carousel-dots" aria-label="Aller à l'image suivante">
         {images.map((_, index) => (
           <button 
             key={index} 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa"; 
-import logo from "../../assets/logoNo/logo full black.png";
+import logo from "../../assets/logoNo/logo-full-black.webp";
 import "./header.css";
 
 function Header() {
