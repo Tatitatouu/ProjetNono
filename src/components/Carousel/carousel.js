@@ -1,9 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import cross from '../../assets/slider/cross.webp'
-import kettel from '../../assets/slider/kettel.webp'
-import deadlift from '../../assets/slider/deadlift.webp'
+import cross from '../../assets/slider/cross.webp';
+import kettel from '../../assets/slider/kettel.webp';
+import deadlift from '../../assets/slider/deadlift.webp';
 import './carousel.css';
+
+const OptimizedImage = ({ src, alt, className }) => {
+  return (
+    <img 
+      src={src} 
+      alt={alt}
+      className={className}
+      loading="eager"
+      fetchpriority="high"
+      decoding="async"
+    />
+  );
+};
 
 const ImageCarousel = ({ images, interval = 3000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -14,6 +27,22 @@ const ImageCarousel = ({ images, interval = 3000 }) => {
     "Exercice de crossfit",
     "Exercice avec kettlebell"
   ];
+
+  // Préchargement des images
+  useEffect(() => {
+    const preloadImages = async () => {
+      const promises = images.map((src) => {
+        return new Promise((resolve) => {
+          const img = new Image();
+          img.src = src;
+          img.onload = resolve;
+        });
+      });
+      await Promise.all(promises);
+    };
+
+    preloadImages();
+  }, [images]);
 
   useEffect(() => {
     if (isHovered) return;
@@ -36,7 +65,7 @@ const ImageCarousel = ({ images, interval = 3000 }) => {
       aria-label="Carrousel d'images d'exercices"
     >
       <div className="carousel-wrapper">
-        <img 
+        <OptimizedImage 
           src={images[currentIndex]} 
           alt={imageDescriptions[currentIndex]}
           className="carousel-image"
