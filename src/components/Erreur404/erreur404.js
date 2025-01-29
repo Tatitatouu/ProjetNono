@@ -14,7 +14,7 @@ const NotFound = () => {
         </p>
 
         <div className="action-container">
-          <a href="/" className="back-home-link">
+          <a href="/ProjetNono" className="back-home-link">
             Retour à l'accueil
           </a>
       

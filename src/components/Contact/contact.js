@@ -11,7 +11,7 @@ function ContactForm() {
   return (
     <div className="contact-container">
       <section className="intro-section">
-        <h1>Je serais ravie d'en savoir plus sur toi et ton projet ✔️</h1>
+        <h1>Je serais ravie d'en savoir plus sur toi et ton projet</h1>
         <p>Que tu aies une question ou un commentaire, n'hésites pas à me contacter !</p>
       </section>
 
