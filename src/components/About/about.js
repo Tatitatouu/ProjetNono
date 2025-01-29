@@ -1,5 +1,6 @@
 import React from 'react';
-import { Users, Target, MapPin, Clipboard } from 'lucide-react';
+import { Users, Target, Clipboard } from 'lucide-react';
+import { PiMapPinLineDuotone } from "react-icons/pi";
 import CoachImage from '../../assets/about/VJP_3308.jpg'
 import './about.css'
 
@@ -57,7 +58,7 @@ const AboutSection = () => {
         <div className="section-container">
           <div className="section-header">
             <Users size={32} className="mr-4" />
-            <h2 className="section-title"> Pour Qui ?</h2>
+            <h2 className="section-title"> Pour qui ?</h2>
           </div>
           <div className="grid-container">
             <div className="card">
@@ -79,8 +80,8 @@ const AboutSection = () => {
       {/* Où me trouver */}
       <div className="section-container">
         <div className="section-header">
-          <MapPin size={35} className="feature-icon mr-4" />
-          <h2 className="section-title">Où me trouver ?</h2>
+          <PiMapPinLineDuotone size={35} className="feature-icon mr-4" />
+          <h3 className="section-title">Où me trouver ?</h3>
         </div>
         <div className="cards-grid">
           <div className="feature-card">
