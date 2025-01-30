@@ -11,7 +11,7 @@ const OptimizedImage = ({ src, alt, className }) => {
       src={src} 
       alt={alt}
       className={className}
-      loading="eager"
+      loading="lazy"
       fetchpriority="high"
       decoding="async"
     />
