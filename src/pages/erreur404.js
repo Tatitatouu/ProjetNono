@@ -7,7 +7,7 @@ const Erreur404 = () => {
     <div>
         <Header />
         <NotFound />
-        <Footer />
+        <Footer />;
     </div>
 );
 }
