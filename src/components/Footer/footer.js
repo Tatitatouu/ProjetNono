@@ -28,7 +28,7 @@ const Footer = () => {
       <p className="footer-credit">
         © 2025 - Créé avec 💜 par
       <a 
-        href="https://github.com/votre-pseudo-github" 
+        href="https://tatitatouu.github.io/Projet12--Portfolio/" 
         target="_blank" 
         rel="noopener noreferrer"
         >Tatiana</a>
